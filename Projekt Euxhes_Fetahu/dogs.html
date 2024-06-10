@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hija">
+          <nav>
+              <img src="images\logo.png" alt="Pet Expo Logo" class="logo">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cats.html">Cats</a></li>
+                  <li><a href="dogs.html">Dogs</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="about us.html">About Us</a></li>
+                  <li><a href="contact us.html">Contact Us</a></li>
+              </ul>
+          </nav>
+          <div class="banner">
+              <h1>Dogs</h1>
+              <p>Discover the wonderful world of dogs</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="dogsGallery" class="dog-gallery-section">
+        <input type="text" id="dogSearch" placeholder="Look for the dog...">
+        <div id="dogCardsContainer" class="dog-cards-container">
+            <div class="dog-card" data-id="1" data-name="Labrador Retriever" data-origin="Kanada" data-temperament="Friendly, Active, Outgoing" data-colors="Yellow, Black, Chocolate" data-description="The Labrador Retriever is one of the most popular dog breeds in the United States.">
+                <img src="images\labrador retriever dog.jpg" alt="Labrador Retriever">
+                <h3>Labrador Retriever</h3>
+                <p>Origin: Canada</p>
+            </div>
+            <div class="dog-card" data-id="2" data-name="German Shepherd" data-origin="Gjermani" data-temperament="Confident, Courageous, Smart" data-colors="Black, Tan" data-description="The German Shepherd is a breed of working dog known for its intelligence and versatility.">
+                <img src="images\german shepherd dog.jpg" alt="German Shepherd">
+                <h3>German Shepherd</h3>
+                <p>Origin: Germany</p>
+            </div>
+            <div class="dog-card" data-id="3" data-name="Bulldog" data-origin="Angli" data-temperament="Docile, Willful, Friendly" data-colors="Brindle, White, Fawn" data-description="Bulldogs are medium-sized, muscular dogs known for their loose, wrinkled skin and distinctive pushed-in nose.">
+                <img src="images\bulldog.jpg" alt="Bulldog">
+                <h3>Bulldog</h3>
+                <p>Origin: England</p>
+            </div>
+            <div class="dog-card" data-id="4" data-name="Beagle" data-origin="Angli" data-temperament="Curious, Merry, Friendly" data-colors="Tricolor, Red & White, Lemon" data-description="Beagles are small hounds known for their great sense of smell and tracking instincts.">
+                <img src="images\beagle dog.jpg" alt="Beagle">
+                <h3>Beagle</h3>
+                <p>Origin: England</p>
+            </div>
+            <div class="dog-card" data-id="5" data-name="Poodle" data-origin="Franca" data-temperament="Proud, Active, Very Smart" data-colors="White, Black, Apricot" data-description="Poodles are known for their curly coats and high intelligence. They come in three sizes: Standard, Miniature, and Toy.">
+                <img src="images\poodle dog.png" alt="Poodle">
+                <h3>Poodle</h3>
+                <p>Origin: France</p>
+            </div>
+            <div class="dog-card" data-id="6" data-name="Rottweiler" data-origin="Gjermani" data-temperament="Confident, Fearless, Good-natured" data-colors="Black & Mahogany, Black & Rust" data-description="Rottweilers are strong, powerful dogs known for their guarding instincts.">
+                <img src="images\rottweiler.png" alt="Rottweiler">
+                <h3>Rottweiler</h3>
+                <p>Origin: Germany</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="dogPopup" class="dog-popup">
+        <div class="dog-popup-content">
+            <span id="dogPopupClose" class="dog-popup-close">&times;</span>
+            <h2 id="dogPopupName"></h2>
+            <p><strong>ID:</strong> <span id="dogPopupId"></span></p>
+            <p><strong>Origin:</strong> <span id="dogPopupOrigin"></span></p>
+            <p><strong>Temperament:</strong> <span id="dogPopupTemperament"></span></p>
+            <p><strong>Colors:</strong> <span id="dogPopupColors"></span></p>
+            <p><strong>Description:</strong> <span id="dogPopupDescription"></span></p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images\logo.png" alt="Pet Expo Logo">
+                    <p>Pet Expo is one of the biggest events for animal lovers in Albania. 
+                        Organized by animal enthusiasts, we aim to provide a wonderful experience for animal lovers and professionals.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="birds.html">Birds</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Details</h3>
+                    <p><strong>Address:</strong> Air Albania Stadium, Tirana, Albania</p>
+                    <p><strong>Phone:</strong> +355 123 4567</p>
+                    <p><strong>Email:</strong> info@petexpo.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><img src="images\facebook logo.png" alt="Facebook"></a>
+                        <a href="https://instagram.com"><img src="images\instagram logo.png" alt="Instagram"></a>
+                        <a href="https://twitter.com"><img src="images\twitter logo.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pet Expo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dogs.js"></script>
+</body>
+</html>

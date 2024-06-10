@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hija">
+          <nav>
+              <img src="images\logo.png" alt="Pet Expo Logo" class="logo">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cats.html">Cats</a></li>
+                  <li><a href="dogs.html">Dogs</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="about us.html">About Us</a></li>
+                  <li><a href="contact us.html">Contact Us</a></li>
+              </ul>
+          </nav>
+          <div class="banner">
+              <h1>Birds</h1>
+              <p>Discover the wonderful world of birds</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="birdsGallery" class="bird-gallery-section">
+        <input type="text" id="birdSearch" placeholder="Look for the bird...">
+        <div id="birdCardsContainer" class="bird-cards-container">
+            <div class="bird-card" data-id="1" data-name="Parrot" data-origin="Australia" data-temperament="Intelligent, Sociable" data-colors="Green, Blue, Red" data-description="Parrots are known for their intelligence and ability to mimic human speech.">
+                <img src="images\parrot bird.jpg" alt="Parrot">
+                <h3>Parrot</h3>
+                <p>Origin: Australia</p>
+            </div>
+            <div class="bird-card" data-id="2" data-name="Canary" data-origin="Canary Islands" data-temperament="Singing, Active" data-colors="Yellow, Orange" data-description="Canaries are small songbirds known for their vibrant colors and melodious singing.">
+                <img src="images\canary bird.jpg" alt="Canary">
+                <h3>Canary</h3>
+                <p>Origin: Canary Islands</p>
+            </div>
+            <div class="bird-card" data-id="3" data-name="Sparrow" data-origin="Worldwide" data-temperament="Social, Hardy" data-colors="Brown, White" data-description="Sparrows are small, social birds found in many parts of the world.">
+                <img src="images\sparrow bird.jpg" alt="Sparrow">
+                <h3>Sparrow</h3>
+                <p>Origin: Worldwide</p>
+            </div>
+            <div class="bird-card" data-id="4" data-name="Peacock" data-origin="India" data-temperament="Majestic, Vibrant" data-colors="Blue, Green" data-description="Peacocks are large, colorful birds known for their iridescent tail feathers.">
+                <img src="images\peacock bird.jpg" alt="Peacock">
+                <h3>Peacock</h3>
+                <p>Origin: India</p>
+            </div>
+            <div class="bird-card" data-id="5" data-name="Penguin" data-origin="Antarctica" data-temperament="Playful, Social" data-colors="Black, White" data-description="Penguins are flightless birds known for their distinctive black and white coloring and playful nature.">
+                <img src="images\penguin bird.jpg" alt="Penguin">
+                <h3>Penguin</h3>
+                <p>Origin: Antarctica</p>
+            </div>
+            <div class="bird-card" data-id="6" data-name="Eagle" data-origin="Worldwide" data-temperament="Powerful, Regal" data-colors="Brown, White" data-description="Eagles are large birds of prey known for their powerful build and keen eyesight.">
+                <img src="images\eagle bird.jpg" alt="Eagle">
+                <h3>Eagle</h3>
+                <p>Origin: Worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="birdPopup" class="bird-popup">
+        <div class="bird-popup-content">
+            <span id="birdPopupClose" class="bird-popup-close">&times;</span>
+            <h2 id="birdPopupName"></h2>
+            <p id="birdPopupId"><strong>ID:</strong> </p>
+            <p id="birdPopupOrigin"><strong>Origin</strong> </p>
+            <p id="birdPopupTemperament"><strong>Temperament:</strong> </p>
+            <p id="birdPopupColors"><strong>Colors:</strong> </p>
+            <p id="birdPopupDescription"><strong>Description:</strong> </p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images\logo.png" alt="Pet Expo Logo">
+                    <p>Pet Expo is one of the biggest events for animal lovers in Albania. 
+                        Organized by animal enthusiasts, we aim to provide a wonderful experience for animal lovers and professionals.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="birds.html">Birds</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Details</h3>
+                    <p><strong>Address:</strong> Air Albania Stadium, Tirana, Albania</p>
+                    <p><strong>Phone:</strong> +355 123 4567</p>
+                    <p><strong>Email:</strong> info@petexpo.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><img src="images\facebook logo.png" alt="Facebook"></a>
+                        <a href="https://instagram.com"><img src="images\instagram logo.png" alt="Instagram"></a>
+                        <a href="https://twitter.com"><img src="images\twitter logo.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pet Expo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="birds.js"></script>
+</body>
+</html>

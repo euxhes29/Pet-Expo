@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="hija">
+          <nav>
+              <img src="images\logo.png" alt="Pet Expo Logo" class="logo">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="cats.html">Cats</a></li>
+                  <li><a href="dogs.html">Dogs</a></li>
+                  <li><a href="birds.html">Birds</a></li>
+                  <li><a href="about us.html">About Us</a></li>
+                  <li><a href="contact us.html">Contact Us</a></li>
+              </ul>
+          </nav>
+          <div class="banner">
+              <h1>Cats</h1>
+              <p>Discover the wonderful world of cats</p>
+          </div>
+        </div>
+      </header>
+
+    <main>
+        <section class="cat-gallery">
+            <input type="text" id="search-bar" placeholder="Look for the cat...">
+
+            <div class="cat-photos">
+                <div class="cat-photo-container" data-id="1" data-name="Siberian" data-origin="Russia" data-temperament="Playful, Affectionate" data-colors="White, Black, Brown" data-description="The Siberian cat is known for its friendly nature and thick fur.">
+                    <img src="images\siberian cat.jpg" alt="Siberian Cat">
+                    <h3>Siberian</h3>
+                    <p>Origin: Russia</p>
+                </div>
+                <div class="cat-photo-container" data-id="2" data-name="Persian" data-origin="Iran" data-temperament="Calm, Affectionate" data-colors="White, Black, Cream" data-description="The Persian cat is a calm and affectionate breed with a distinct flat face.">
+                    <img src="images\persian cat.jpg" alt="Persian Cat">
+                    <h3>Persian</h3>
+                    <p>Origin: Iran</p>
+                </div>
+                <div class="cat-photo-container" data-id="3" data-name="Maine Coon" data-origin="USA" data-temperament="Gentle, Playful" data-colors="Brown, Black, White" data-description="The Maine Coon is one of the largest domesticated cat breeds.">
+                    <img src="images\maine coon cat.jpg" alt="Maine Coon">
+                    <h3>Maine Coon</h3>
+                    <p>Origin: USA</p>
+                </div>
+                <div class="cat-photo-container" data-id="4" data-name="Siamese" data-origin="Thailand" data-temperament="Vocal, Affectionate" data-colors="Cream, Brown, Blue" data-description="The Siamese cat is known for its striking blue eyes and vocal nature.">
+                    <img src="images\siamese cat.jpg" alt="Siamese Cat">
+                    <h3>Siamese</h3>
+                    <p>Origin: Thailand</p>
+                </div>
+                <div class="cat-photo-container" data-id="5" data-name="Bengal" data-origin="USA" data-temperament="Active, Curious" data-colors="Orange, Black" data-description="The Bengal cat is known for its wild appearance and high energy levels.">
+                    <img src="images\bengal cat.jpg" alt="Bengal Cat">
+                    <h3>Bengal</h3>
+                    <p>Origin: USA</p>
+                </div>
+                <div class="cat-photo-container" data-id="6" data-name="Scottish Fold" data-origin="Scotland" data-temperament="Calm, Friendly" data-colors="Gray, White, Black" data-description="The Scottish Fold is famous for its folded ears and calm demeanor.">
+                    <img src="images\scottish fold cat.jpg" alt="Scottish Fold">
+                    <h3>Scottish Fold</h3>
+                    <p>Origin: Scotland</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="popup-name">Name</h2>
+            <p><strong>ID:</strong> <span id="popup-id"></span> </p>
+            <p><strong>Origin:</strong> <span id="popup-origin"></span> </p>
+            <p><strong>Temperament:</strong> <span id="popup-temperament"></span> </p>
+            <p><strong>Colors:</strong> <span id="popup-colors"></span> </p>
+            <p><strong>Description:</strong> <span id="popup-description"></span> </p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="images\logo.png" alt="Pet Expo Logo">
+                    <p>Pet Expo is one of the biggest events for animal lovers in Albania. 
+                        Organized by animal enthusiasts, we aim to provide a wonderful experience for animal lovers and professionals.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cats.html">Cats</a></li>
+                        <li><a href="dogs.html">Dogs</a></li>
+                        <li><a href="birds.html">Birds</a></li>
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Details</h3>
+                    <p><strong>Address:</strong> Air Albania Stadium, Tirana, Albania</p>
+                    <p><strong>Phone:</strong> +355 123 4567</p>
+                    <p><strong>Email:</strong> info@petexpo.com</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><img src="images\facebook logo.png" alt="Facebook"></a>
+                        <a href="https://instagram.com"><img src="images\instagram logo.png" alt="Instagram"></a>
+                        <a href="https://twitter.com"><img src="images\twitter logo.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pet Expo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
